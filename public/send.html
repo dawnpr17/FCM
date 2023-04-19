@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-messaging-compat.js"></script>
+  <style>
+    p {font-weight: bold;}
+  </style>
+  <script src="receive.js"></script>
+</head>
+
+<body>
+  <h1>Send Notification</h1>
+
+  <p>local edge</p>
+  <input type="text" id="token" placeholder="Enter User Token Id" value="cqi1WZdX01lIXmSnHfJIKw:APA91bG8vdUK_5sK_SGsLSIXfiq4cmgguNLueFeJp28anOcq1KJr8eqoaDsbKR_flT_I9uUEbH37fdJGUy8ppmvJOufCSMK-QQ7oSDFwsNYkMQ4CRQ8skKGnoFi9HEkaKBXV_CDL3QL5">
+  <!-- <p>local chrome</p>
+  <input type="text" id="token" placeholder="Enter User Token Id" value="eij5aTCM6f9oiEGzhPHS-4:APA91bGvxdQguVoNftu1vDVKVa44JsjeTEhSBe1DvR9HsOpvDmGLjXCKVPhquJQsjvxwxofl-wSt99pWWTKZAiC4vM0gz4a9SsLNCpmN5V81lGpp6Acrxh3mG2FZ7YOlpoLvA5H1iEGB"> -->
+  <input type="text" id="title" placeholder="Title" value="Title Test">
+  <input type="text" id="msg" placeholder="msg" value="Hi! Paul">
+
+  <button onclick="sendNotification()">Send</button>
+  <div id="tokenId"></div>
+  <script src="app.js"></script>
+</body>
+
+
+</html>
